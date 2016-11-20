@@ -2,6 +2,6 @@
 
 return array(
     //security 目录路径
-    //@todo 推荐设置到一个不在版本库中的目录
-    'security_path' => dirname(CTX_BASE) . '/security',
+    //@todo 推荐设置到config同级目录，但是从版本库中忽略
+    'security_path' => __DIR__ . '/../../security',
 );

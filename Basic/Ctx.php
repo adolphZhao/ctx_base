@@ -9,6 +9,11 @@ use Tree6bee\Ctx\Basic\Ctx as BasicCtx;
  */
 abstract class Ctx extends BasicCtx
 {
+    /**
+     * @var \Ctx\Ctx $ctx
+     */
+    public $ctx;
+
     /*--- part.2 非框架核心 ---*/
 
     /**
@@ -16,7 +21,7 @@ abstract class Ctx extends BasicCtx
      *
      * @example $this->getItem('avatar.url')
      */
-    protected function getItem($item = null, $default = null, $file = 'main')
+    protected function getItem($item = '', $default = null, $file = 'main')
     {
         $path = '@' . $this->getModName() . '/' . $file;
         return $this->ctx->Ctx->getConf($item . $path, $default);
@@ -27,7 +32,7 @@ abstract class Ctx extends BasicCtx
      *
      * @example $this->setItem('port', '8080')
      */
-    protected function setItem($item = null, $config = null, $file = 'main')
+    protected function setItem($item = '', $config = null, $file = 'main')
     {
         $path = '@' . $this->getModName() . '/' . $file;
         return $this->ctx->Ctx->setConf($item . $path, $config);
@@ -38,7 +43,7 @@ abstract class Ctx extends BasicCtx
      *
      * @example $this->getCItem('upload.host')
      */
-    protected function getCItem($item = null, $default = null, $file = 'main')
+    protected function getCItem($item = '', $default = null, $file = 'main')
     {
         $path = '@common/' . $file;
         return $this->ctx->Ctx->getConf($item . $path, $default);

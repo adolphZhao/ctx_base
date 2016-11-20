@@ -3,6 +3,7 @@
 namespace Ctx\Service\Ctx;
 
 use Ctx\Basic\Ctx;
+use Tree6bee\Support\Ctx\Config\Config;
 
 /**
  * 模块接口声明文件
@@ -26,10 +27,9 @@ class CtxCtx extends Ctx
 
     public function init()
     {
-        parent::init();
         // 如果为公有属性可以等效于直接赋值给ctx节点
-        // $this->ctx->Ctx->config = $this->loadC('config', CTX_BASE . '/config');
-        $this->config = $this->loadC('Config', CTX_BASE . '/config');
+        // $this->ctx->Ctx->config = new Config(__DIR__ . '/../../config');
+        $this->config = new Config(__DIR__ . '/../../config');
         $this->storage = $this->loadC('Storage');
     }
 

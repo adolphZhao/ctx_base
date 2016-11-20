@@ -2,31 +2,13 @@
 
 namespace Tests\Ctx\Service\Ctx;
 
-use Ctx\Service\Ctx\Config;
 use Tests\Ctx\TestCase;
 
 class ConfigTest extends TestCase
 {
-    private $config;
-
     public function __construct($name = null, array $data = [], $dataName = '')
     {
         parent::__construct($name, $data, $dataName);
-
-        //初始化用于测试的config对象
-        // echo realpath(__DIR__ . '/../../');exit;
-        $this->config = new Config($this->ctxTestsDir . '/config');
-    }
-
-    public function testGetConfig()
-    {
-        //测试修改配置
-        $this->config->setConfig('a@Ctx/main', 2);
-        $this->assertEquals(2, $this->config->getConfig('a@Ctx/main'));
-        //测试获取子配置
-        $this->assertEquals(2, $this->config->getConfig('b.ba@Ctx/main'));
-        //测试获取不存在的配置
-        $this->assertEquals(3, $this->config->getConfig('b.bb@Ctx/main', 3));
     }
 
     public function testGetConfigWithCtx()
