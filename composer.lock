@@ -9,20 +9,20 @@
     "packages": [
         {
             "name": "tree6bee/cf",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Tree6bee/cf.git",
-                "reference": "41498c042da185fb9ee4520eb473f5492c084690"
+                "reference": "14478de3c96426636507c0efdfbb3dfa76a02b51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/Tree6bee/cf/41498c042da185fb9ee4520eb473f5492c084690.zip",
-                "reference": "41498c042da185fb9ee4520eb473f5492c084690",
+                "url": "https://packagist.phpcomposer.com/files/Tree6bee/cf/14478de3c96426636507c0efdfbb3dfa76a02b51.zip",
+                "reference": "14478de3c96426636507c0efdfbb3dfa76a02b51",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6",
+                "php": ">=5.3",
                 "tree6bee/support": "~1.0"
             },
             "type": "library",
@@ -44,7 +44,7 @@
                 "framework",
                 "tree6bee"
             ],
-            "time": "2016-11-21 03:41:17"
+            "time": "2016-11-21 08:18:01"
         },
         {
             "name": "tree6bee/ctx",
@@ -90,16 +90,16 @@
         },
         {
             "name": "tree6bee/support",
-            "version": "1.0.10",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Tree6bee/support.git",
-                "reference": "51055ed411bdc637138325c22b5a298e122cc186"
+                "reference": "bc16d1a27ceb751335ea7fe2fa061815c4a111d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/Tree6bee/support/51055ed411bdc637138325c22b5a298e122cc186.zip",
-                "reference": "51055ed411bdc637138325c22b5a298e122cc186",
+                "url": "https://packagist.phpcomposer.com/files/Tree6bee/support/bc16d1a27ceb751335ea7fe2fa061815c4a111d6.zip",
+                "reference": "bc16d1a27ceb751335ea7fe2fa061815c4a111d6",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +125,7 @@
                 "support",
                 "tree6bee"
             ],
-            "time": "2016-11-21 06:17:40"
+            "time": "2016-11-21 08:12:36"
         }
     ],
     "packages-dev": [
