@@ -12,4 +12,5 @@ use Tree6bee\Ctx\Ctx as BasicCtx;
  */
 class Ctx extends BasicCtx
 {
+    protected static $ctxInstance;
 }
