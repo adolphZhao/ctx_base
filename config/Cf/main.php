@@ -28,7 +28,6 @@ return array(
         'salt'          => 'c!o*o^k#i-e_s%a$l@t',   //cookie加密盐
     ),
     'session'            => array( //session设置 这里以memc为例
-        'auto'                  => false,  //是否自动开启session
         'cookie_domain'         => '',   //如 .domain.com
         'save_handler'          => '',  //如 memcache | redis
         'save_path'             => '',  //如 tcp://192.168.1.107:11211
