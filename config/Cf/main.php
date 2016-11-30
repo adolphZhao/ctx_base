@@ -14,9 +14,9 @@ return array(
     //--end--
     'timezone'          => 'Asia/Shanghai',
     'dispatch'          => array( //路由相关配置
-        'default_module'        => 'Home',  //模块大写
-        'default_controller'    => 'Index', //控制器大写
-        'default_action'        => 'index', //方法小写
+        'default_module'        => 'home',  //模块
+        'default_controller'    => 'index', //控制器
+        'default_action'        => 'index', //方法
         'url_suffix'            => 'cgi', //此处数组为配置文件，URL伪静态后缀设置 URL_HTML_SUFFIX:html/html/asp/jsp/cgi
         'path_separator'        => '/', //可以为 /|-|~
         'url_var'               => '_URI_',
