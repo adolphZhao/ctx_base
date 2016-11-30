@@ -10,10 +10,7 @@ return array(
     'namespace'         => 'App',
     'storage_path'      => dirname(dirname(__FILE__)) . '/storage',
     'static'            => 'http://s.sh7nestatic.com', //静态资源
-    'xhprof'            => array(
-        'open'          => true,
-        'path'          => dirname(dirname(__FILE__)) . '/public/xhprof',
-    ),
+    'xhprof_dir'        =>  dirname(dirname(__FILE__)) . '/public/xhprof',
     //--end--
     'timezone'          => 'Asia/Shanghai',
     'dispatch'          => array( //路由相关配置
@@ -32,10 +29,5 @@ return array(
         'save_handler'          => '',  //如 memcache | redis
         'save_path'             => '',  //如 tcp://192.168.1.107:11211
         'name'                  => 'Tree6BSESSID',  //如 PHPSESSID | JSESSIONID 会话名称至少需要一个字母，不能全部都使用数字
-    ),
-    'csrf'              => array(   //csrf只会对post生效,session主动开启的时候才有效
-        'protection'            => true,    //是否开启保护，如果是api则不建议开启
-        'onetime'               => false,   //是否只能一次性使用,经常变更
-        'key'                   => '_csrf', //csrf的session和表单的name
     ),
 );
