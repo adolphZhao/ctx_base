@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "tree6bee/cf",
-            "version": "1.0.17",
+            "version": "1.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Tree6bee/cf.git",
-                "reference": "6dbc1e4129bbb1704ea959dbcdc8ddaee5d450fc"
+                "reference": "d0d90708073b2389bb188dba675f9a7420166163"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/Tree6bee/cf/6dbc1e4129bbb1704ea959dbcdc8ddaee5d450fc.zip",
-                "reference": "6dbc1e4129bbb1704ea959dbcdc8ddaee5d450fc",
+                "url": "https://packagist.phpcomposer.com/files/Tree6bee/cf/d0d90708073b2389bb188dba675f9a7420166163.zip",
+                "reference": "d0d90708073b2389bb188dba675f9a7420166163",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
                 "framework",
                 "tree6bee"
             ],
-            "time": "2016-11-30 08:10:44"
+            "time": "2016-12-01 02:55:34"
         },
         {
             "name": "tree6bee/ctx",
@@ -90,16 +90,16 @@
         },
         {
             "name": "tree6bee/support",
-            "version": "1.0.13",
+            "version": "1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Tree6bee/support.git",
-                "reference": "e494343ffc893c0daf53aea2f184a2f04169f88b"
+                "reference": "5b36f768ccdea92fdde4d9658fd0022fdb23ea03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/Tree6bee/support/e494343ffc893c0daf53aea2f184a2f04169f88b.zip",
-                "reference": "e494343ffc893c0daf53aea2f184a2f04169f88b",
+                "url": "https://packagist.phpcomposer.com/files/Tree6bee/support/5b36f768ccdea92fdde4d9658fd0022fdb23ea03.zip",
+                "reference": "5b36f768ccdea92fdde4d9658fd0022fdb23ea03",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +125,7 @@
                 "support",
                 "tree6bee"
             ],
-            "time": "2016-11-25 03:48:33"
+            "time": "2016-12-01 03:00:14"
         }
     ],
     "packages-dev": [
@@ -1334,25 +1334,31 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.7",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "9da375317228e54f4ea1b013b30fa47417e84943"
+                "reference": "f2300ba8fbb002c028710b92e1906e7457410693"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/symfony/yaml/9da375317228e54f4ea1b013b30fa47417e84943.zip",
-                "reference": "9da375317228e54f4ea1b013b30fa47417e84943",
+                "url": "https://packagist.phpcomposer.com/files/symfony/yaml/f2300ba8fbb002c028710b92e1906e7457410693.zip",
+                "reference": "f2300ba8fbb002c028710b92e1906e7457410693",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.9"
             },
+            "require-dev": {
+                "symfony/console": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -1379,7 +1385,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-11-18 21:05:29"
+            "time": "2016-11-18 21:17:59"
         },
         {
             "name": "webmozart/assert",
