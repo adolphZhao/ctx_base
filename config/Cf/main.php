@@ -6,11 +6,11 @@
 return array(
     //development(开发模式), testing(单测模式暂时不考虑), production(生产环境),maintenance(维护模式)
     'environment'       => 'development',
-    'app_path'          => dirname(dirname(__FILE__)) . '/app',
     'namespace'         => 'App',
+    'app_path'          => dirname(dirname(__FILE__)) . '/app',
     'storage_path'      => dirname(dirname(__FILE__)) . '/storage',
-    'static'            => 'http://s.sh7nestatic.com', //静态资源
     'xhprof_dir'        =>  dirname(dirname(__FILE__)) . '/public/xhprof',
+    'static'            => 'http://s.sh7nestatic.com', //静态资源
     //--end--
     'timezone'          => 'Asia/Shanghai',
     'dispatch'          => array( //路由相关配置
@@ -21,10 +21,8 @@ return array(
         'path_separator'        => '/', //可以为 /|-|~
         'url_var'               => '_URI_',
     ),
-    'cookie'            => array(
-        'salt'          => 'c!o*o^k#i-e_s%a$l@t',   //cookie加密盐
-    ),
-    'session'            => array( //session设置 这里以memc为例
+    'cookie_salt'       => 'c!o*o^k#i-e_s%a$l@t',   //cookie加密盐
+    'session'           => array( //session设置 这里以memc为例
         'cookie_domain'         => '',   //如 .domain.com
         'save_handler'          => '',  //如 memcache | redis
         'save_path'             => '',  //如 tcp://192.168.1.107:11211
