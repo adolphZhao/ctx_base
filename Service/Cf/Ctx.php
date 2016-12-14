@@ -83,6 +83,7 @@ class CfCtx extends Ctx
         //构造异常接管对象
         $namespace = $config->get('namespace');
 
+        //如果采用composer统一处理 这里可以去掉
         new \Tree6bee\Ctx\Loader\Psr4(array(
             $namespace . '\\' => $this->appDir,
         ));
