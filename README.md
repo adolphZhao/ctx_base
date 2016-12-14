@@ -6,5 +6,5 @@ build the ctx project.
 * installation
 
 ```
-composer create-project tree6bee/ctx_base
+composer create-project tree6bee/ctx_base --no-dev
 ```
