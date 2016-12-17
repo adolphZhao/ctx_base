@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "tree6bee/cf",
-            "version": "1.0.19",
+            "version": "1.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Tree6bee/cf.git",
-                "reference": "0a54508152959130b488e3b74db1fd58ad472f13"
+                "reference": "9ba04ee80f64fedea9ff62f8a6e7547be9e766b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/Tree6bee/cf/0a54508152959130b488e3b74db1fd58ad472f13.zip",
-                "reference": "0a54508152959130b488e3b74db1fd58ad472f13",
+                "url": "https://packagist.phpcomposer.com/files/Tree6bee/cf/9ba04ee80f64fedea9ff62f8a6e7547be9e766b2.zip",
+                "reference": "9ba04ee80f64fedea9ff62f8a6e7547be9e766b2",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
                 "framework",
                 "tree6bee"
             ],
-            "time": "2016-12-14 03:08:20"
+            "time": "2016-12-17 16:13:43"
         },
         {
             "name": "tree6bee/ctx",
