@@ -35,7 +35,7 @@ abstract class Ctx extends BasicCtx
     protected function setItem($item = '', $config = null, $file = 'main')
     {
         $path = '@' . $this->getModName() . '/' . $file;
-        return $this->ctx->Ctx->setConf($item . $path, $config);
+        $this->ctx->Ctx->setConf($item . $path, $config);
     }
 
     /**
