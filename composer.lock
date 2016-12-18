@@ -4,48 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "46bbc8f83aeb0fa674a333fbc97617ae",
-    "content-hash": "e8b2fb48b41fdbf72a8f3020ebe5170a",
+    "hash": "47da3fb203f62cb32a796b80d8f02628",
+    "content-hash": "be9b45b12b542fb1b3d0539aba5188ea",
     "packages": [
-        {
-            "name": "tree6bee/cf",
-            "version": "1.0.23",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Tree6bee/cf.git",
-                "reference": "e500e628de0b8737085c1159a73af1bfe5f7b260"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/Tree6bee/cf/e500e628de0b8737085c1159a73af1bfe5f7b260.zip",
-                "reference": "e500e628de0b8737085c1159a73af1bfe5f7b260",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3",
-                "tree6bee/support": "~1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/Support/Helpers/functions.php"
-                ],
-                "psr-4": {
-                    "Tree6bee\\Cf\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "the Ctx php framework",
-            "keywords": [
-                "ctx",
-                "framework",
-                "tree6bee"
-            ],
-            "time": "2016-12-17 16:33:33"
-        },
         {
             "name": "tree6bee/ctx",
             "version": "1.0.12",
