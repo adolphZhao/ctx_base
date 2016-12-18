@@ -90,16 +90,16 @@
         },
         {
             "name": "tree6bee/support",
-            "version": "1.0.16",
+            "version": "1.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Tree6bee/support.git",
-                "reference": "78a04fe28b4c1bde5eb07a3880ac5d2d963af8e9"
+                "reference": "3142483deafa71002116760f0108a52f274658b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/Tree6bee/support/78a04fe28b4c1bde5eb07a3880ac5d2d963af8e9.zip",
-                "reference": "78a04fe28b4c1bde5eb07a3880ac5d2d963af8e9",
+                "url": "https://packagist.phpcomposer.com/files/Tree6bee/support/3142483deafa71002116760f0108a52f274658b4.zip",
+                "reference": "3142483deafa71002116760f0108a52f274658b4",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +125,7 @@
                 "support",
                 "tree6bee"
             ],
-            "time": "2016-12-14 04:14:58"
+            "time": "2016-12-18 14:30:00"
         }
     ],
     "packages-dev": [
