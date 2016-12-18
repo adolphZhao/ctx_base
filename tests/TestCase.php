@@ -2,13 +2,19 @@
 
 namespace Tests\Ctx;
 
+use Ctx\Ctx;
+
 class TestCase extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @var Ctx
+     */
     protected $ctx;
 
     /**
-     * ctx测试目录 
-     * @var $ctxTestsDir
+     * ctx测试目录
+     *
+     * @var string
      */
     protected $ctxTestsDir;
 
@@ -17,7 +23,7 @@ class TestCase extends \PHPUnit_Framework_TestCase
         parent::__construct($name, $data, $dataName);
 
         //初始化用于测试的ctx单例对象
-        $this->ctx = \Tree6bee\Ctx\Ctx::getInstance(dirname(__DIR__));
+        $this->ctx = Ctx::getInstance();
 
         $this->ctxTestsDir = dirname(__DIR__) . '/tests';
     }
