@@ -4,25 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "47da3fb203f62cb32a796b80d8f02628",
-    "content-hash": "be9b45b12b542fb1b3d0539aba5188ea",
+    "hash": "580417ca08bfe9b28a9710119151c142",
+    "content-hash": "65da057cac38228ba559a4a0e3876057",
     "packages": [
         {
-            "name": "tree6bee/ctx",
-            "version": "1.0.12",
+            "name": "tree6bee/cf",
+            "version": "1.0.23",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Tree6bee/ctx.git",
-                "reference": "314f99d208367446d658e3cc50de20c10641f336"
+                "url": "https://github.com/Tree6bee/cf.git",
+                "reference": "e500e628de0b8737085c1159a73af1bfe5f7b260"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/Tree6bee/ctx/314f99d208367446d658e3cc50de20c10641f336.zip",
-                "reference": "314f99d208367446d658e3cc50de20c10641f336",
+                "url": "https://packagist.phpcomposer.com/files/Tree6bee/cf/e500e628de0b8737085c1159a73af1bfe5f7b260.zip",
+                "reference": "e500e628de0b8737085c1159a73af1bfe5f7b260",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3"
+                "php": ">=5.3",
+                "tree6bee/support": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Support/Helpers/functions.php"
+                ],
+                "psr-4": {
+                    "Tree6bee\\Cf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "the Ctx php framework",
+            "keywords": [
+                "ctx",
+                "framework",
+                "tree6bee"
+            ],
+            "time": "2016-12-17 16:33:33"
+        },
+        {
+            "name": "tree6bee/ctx",
+            "version": "1.0.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Tree6bee/ctx.git",
+                "reference": "d124a99c5c1bcf4d67c8186ce6273d6c03a32224"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Tree6bee/ctx/zipball/d124a99c5c1bcf4d67c8186ce6273d6c03a32224",
+                "reference": "d124a99c5c1bcf4d67c8186ce6273d6c03a32224",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "tree6bee/support": "~1.0"
             },
             "require-dev": {
                 "mockery/mockery": "0.9.*",
@@ -30,9 +70,6 @@
             },
             "type": "library",
             "autoload": {
-                "files": [
-                    "src/Loader/file.php"
-                ],
                 "psr-4": {
                     "Tree6bee\\Ctx\\": "src/"
                 }
@@ -47,20 +84,20 @@
                 "ctx",
                 "tree6bee"
             ],
-            "time": "2016-12-14 03:57:45"
+            "time": "2016-12-18 17:00:31"
         },
         {
             "name": "tree6bee/support",
-            "version": "1.0.18",
+            "version": "1.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Tree6bee/support.git",
-                "reference": "3142483deafa71002116760f0108a52f274658b4"
+                "reference": "be378862e94d1f8b663e2587fe28211f6c749a37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/Tree6bee/support/3142483deafa71002116760f0108a52f274658b4.zip",
-                "reference": "3142483deafa71002116760f0108a52f274658b4",
+                "url": "https://api.github.com/repos/Tree6bee/support/zipball/be378862e94d1f8b663e2587fe28211f6c749a37",
+                "reference": "be378862e94d1f8b663e2587fe28211f6c749a37",
                 "shasum": ""
             },
             "require": {
@@ -71,6 +108,9 @@
             },
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/Ctx/Loader/file.php"
+                ],
                 "psr-4": {
                     "Tree6bee\\Support\\": "src/"
                 }
@@ -86,7 +126,7 @@
                 "support",
                 "tree6bee"
             ],
-            "time": "2016-12-18 14:30:00"
+            "time": "2016-12-18 16:58:53"
         }
     ],
     "packages-dev": [
