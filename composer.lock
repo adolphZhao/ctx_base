@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "tree6bee/cf",
-            "version": "1.0.23",
+            "version": "1.0.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Tree6bee/cf.git",
-                "reference": "e500e628de0b8737085c1159a73af1bfe5f7b260"
+                "reference": "ec124b5ccefb753a4a6c9f05778dafa0042884af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/Tree6bee/cf/e500e628de0b8737085c1159a73af1bfe5f7b260.zip",
-                "reference": "e500e628de0b8737085c1159a73af1bfe5f7b260",
+                "url": "https://packagist.phpcomposer.com/files/Tree6bee/cf/ec124b5ccefb753a4a6c9f05778dafa0042884af.zip",
+                "reference": "ec124b5ccefb753a4a6c9f05778dafa0042884af",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
                 "framework",
                 "tree6bee"
             ],
-            "time": "2016-12-17 16:33:33"
+            "time": "2016-12-27 14:55:50"
         },
         {
             "name": "tree6bee/ctx",
@@ -437,16 +437,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "4.0.3",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "903fd6318d0a90b4770a009ff73e4a4e9c437929"
+                "reference": "c14196e64a78570034afd0b7a9f3757ba71c2a0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/sebastianbergmann/php-code-coverage/903fd6318d0a90b4770a009ff73e4a4e9c437929.zip",
-                "reference": "903fd6318d0a90b4770a009ff73e4a4e9c437929",
+                "url": "https://packagist.phpcomposer.com/files/sebastianbergmann/php-code-coverage/c14196e64a78570034afd0b7a9f3757ba71c2a0a.zip",
+                "reference": "c14196e64a78570034afd0b7a9f3757ba71c2a0a",
                 "shasum": ""
             },
             "require": {
@@ -496,7 +496,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-11-28 16:00:31"
+            "time": "2016-12-20 15:22:42"
         },
         {
             "name": "phpunit/php-file-iterator",
