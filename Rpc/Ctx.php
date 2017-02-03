@@ -6,6 +6,6 @@ class Ctx
 {
     public function debug($var = array())
     {
-        return 'Rpc:' . print_r($var, true);
+        return 'Rpc: ' . print_r($var, true);
     }
 }
