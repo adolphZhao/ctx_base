@@ -1,3 +1,4 @@
+security/*
 .bak/*
 vendor/*
 .DS_Store
