@@ -6,6 +6,7 @@ use Ctx\Basic\Ctx;
 use Ctx\Basic\Exception;
 use Tree6bee\Support\Ctx\Cache\Redis;
 use Tree6bee\Support\Ctx\Db\Mysql;
+use Tree6bee\Support\Ctx\Db\Pgsql;
 
 /**
  * 框架存储辅助类
@@ -23,24 +24,32 @@ class Storage extends Ctx
     /**
      * db实例，所有子类都会共享该属性
      */
-    private static $mysqlObj = array();
+    private static $dbObj = array();
 
     /**
      * 加载数据库mysql获取数据库操作对象
      * $this->loadDB();
      * $this->loadDB('mission.slave');
+     *
+     * @param string $database
+     * @return \Tree6bee\Support\Ctx\Db\Connection
+     * @throws Exception
      */
-    public function mysql($database = 'default.master')
+    public function db($database = 'default.master')
     {
-        if (! isset(self::$mysqlObj[$database])) {
-            $config = $this->ctx->Ctx->getSConf($database . '@mysql');
+        if (! isset(self::$dbObj[$database])) {
+            $config = $this->ctx->Ctx->getSConf($database . '@db');
             try {
-                self::$mysqlObj[$database] = new Mysql($config);
+                if ($config['driver'] == 'mysql') {
+                    self::$dbObj[$database] = new Mysql($config['dsn'], $config['user'], $config['psw']);
+                } else {    //默认mysql
+                    self::$dbObj[$database] = new Pgsql($config['dsn'], $config['user'], $config['psw']);
+                }
             } catch (\Exception $e) {
                 throw new Exception($database . '连接失败');
             }
         }
-        return self::$mysqlObj[$database];
+        return self::$dbObj[$database];
     }
 
     /**
@@ -52,6 +61,9 @@ class Storage extends Ctx
      * 加载Redis对象
      * $this->ctx->loadRedis();
      * $this->ctx->loadRedis('test');
+     *
+     * @param string $redis
+     * @return Redis
      */
     public function redis($redis = 'default')
     {

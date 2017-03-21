@@ -110,7 +110,7 @@ class CtxCtx extends Ctx
      */
     public function loadDB($database = 'default.master')
     {
-        return $this->storage->mysql($database);
+        return $this->storage->db($database);
     }
 
     /**
