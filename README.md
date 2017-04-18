@@ -3,6 +3,7 @@
 * [Installation](#installation)
 * [Usage](#usage)
   * [Defining Ctx](#defining-ctx)
+  * [Defining Service](#defining-service)
 
 ## Introduction
 
